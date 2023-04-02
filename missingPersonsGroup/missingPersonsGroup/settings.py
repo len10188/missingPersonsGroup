@@ -1,3 +1,4 @@
+#Authors: Megan Bates, Elise Pickett, Steven Armstrong, Kayla Tansiongco, Laura Nielson, Autumn Eaton
 """
 Django settings for missingPersonsGroup project.
 

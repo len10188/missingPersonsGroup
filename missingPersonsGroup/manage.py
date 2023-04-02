@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#Authors: Megan Bates, Elise Pickett, Steven Armstrong, Kayla Tansiongco, Laura Nielson, Autumn Eaton
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
