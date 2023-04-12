@@ -2,6 +2,7 @@
 Authors: Megan Bates, Steven Armstrong, Kayla Tansiongco, Laura Nielson, Elise Pickett, Autumn Eaton.
 Purpose: To store JSON data and display it dynamically via HTML.
 '''
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
