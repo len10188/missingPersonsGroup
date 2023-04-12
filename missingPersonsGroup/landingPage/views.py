@@ -10,13 +10,13 @@ from django.http import HttpResponse
 def indexPageView(request) :
     return render(request, 'landingPage/index.html')
 
-def individualPageView(request, s_name) :
+def individualPageView(request) : #s_name
     
-    context = {
-        "person_name": s_name
-    }
+   # context = {
+       # "person_name": s_name
+    #}
     
-    return render(request, 'landingPage/individual.html', context)
+    return render(request, 'landingPage/individual.html') #context
 
 def resourcesPageView (request) :
     return render(request, 'landingPage/resources.html')
