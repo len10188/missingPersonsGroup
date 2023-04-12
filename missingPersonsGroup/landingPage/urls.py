@@ -9,9 +9,8 @@ from .views import indexPageView, individualPageView, resourcesPageView, databas
 
 urlpatterns = [
     path("", indexPageView, name = "index"),
+    path("home", indexPageView, name = "index"),
     path("individual", individualPageView, name = "individual"),
-    path("home", indexPageView, name = "index" ),
     path("resources", resourcesPageView, name = "resources"),
     path('database', databasePageView, name = "database")
-    
 ]
