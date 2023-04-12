@@ -23,6 +23,7 @@
                                 <th class="col-md-auto" title="Field #6">State</th>
                                 <th class="col-md-auto" title="Field #7">Gender</th>
                                 <th class="col-md-auto" title="Field #8">Race</th>
+                                <th class="col-md-auto" title="Link"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,6 +37,7 @@
                                 <td>{{student.state }}</td>
                                 <td>{{student.gender }}</td>
                                 <td>{{student.race }}</td>
+                                <td><a href="{% url 'displayScreen' s_name=student.lastname %}">View Data</a></td>
                             </tr>
                             {% endfor %}
                         </tbody>
