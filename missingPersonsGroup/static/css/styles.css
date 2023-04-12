@@ -10823,7 +10823,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}
   .center-text-title{
-    text-align: center;
+    text-align: center !important;
   }
+}
