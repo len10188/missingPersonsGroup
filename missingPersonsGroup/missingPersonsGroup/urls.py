@@ -21,5 +21,5 @@ urlpatterns = [
     path("", include('landingPage.urls')),
     path('home', include('landingPage.urls')),
     path('resources', include ('landingPage.urls')),
-    path('database', include ('landingPage.urs'))
+    path('database', include ('landingPage.urls'))
 ]
