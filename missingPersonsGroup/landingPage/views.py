@@ -182,3 +182,6 @@ def individualPageView(request) :
 def resourcesPageView (request) :
     return render(request, 'landingPage/resources.html')
 
+def databasePageView (request) :
+    return render(request, 'landingPage/database.html')
+

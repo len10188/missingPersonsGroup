@@ -4,7 +4,7 @@ Purpose: To store the routes for each page in the application.
 '''
 # importing urls and setting up path
 from django.urls import path
-from .views import indexPageView, individualPageView, resourcesPageView
+from .views import indexPageView, individualPageView, resourcesPageView, databasePageView
 
 
 urlpatterns = [
@@ -12,5 +12,6 @@ urlpatterns = [
     path("individual", individualPageView, name = "individual"),
     path("home", indexPageView, name = "index" ),
     path("resources", resourcesPageView, name = "resources"),
+    path('database', databasePageView, name = "database")
     
 ]
