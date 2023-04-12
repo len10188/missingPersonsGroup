@@ -11,7 +11,12 @@ def indexPageView(request) :
     return render(request, 'landingPage/index.html')
 
 def individualPageView(request) :
-    return render(request, 'landingPage/individual.html')
+    
+    context = {
+        "person_name": s_name
+    }
+    
+    return render(request, 'landingPage/individual.html', context)
 
 def resourcesPageView (request) :
     return render(request, 'landingPage/resources.html')
