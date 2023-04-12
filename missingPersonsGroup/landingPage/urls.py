@@ -12,5 +12,5 @@ urlpatterns = [
     path("home", indexPageView, name = "index"),
     path("<str:s_name>", individualPageView, name = "individual"),
     path("resources", resourcesPageView, name = "resources"),
-    path('database', databasePageView, name = "database")
+    path("database", databasePageView, name = "database")
 ]
