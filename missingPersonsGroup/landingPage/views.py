@@ -177,3 +177,7 @@ def indexPageView(request) :
 
 def individualPageView(request) :
     return render(request, 'landingPage/individual.html')
+
+def resourcesPageView (request) :
+    return render(request, 'landingPage/resources.html')
+
