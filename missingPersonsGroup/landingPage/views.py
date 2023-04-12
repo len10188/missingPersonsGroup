@@ -2,11 +2,22 @@
 Authors: Megan Bates, Steven Armstrong, Kayla Tansiongco, Laura Nielson, Elise Pickett, Autumn Eaton.
 Purpose: To store JSON data and display it dynamically via HTML.
 '''
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
 
 def indexPageView(request) :
+    return render(request, 'landingPage/index.html')
+
+def individualPageView(request) :
+    return render(request, 'landingPage/individual.html')
+
+def resourcesPageView (request) :
+    return render(request, 'landingPage/resources.html')
+
+def databasePageView (request) :
+    
     lstData = [
         {
             "date_missing": "10/30/2009",
@@ -174,14 +185,4 @@ def indexPageView(request) :
         "data" : lstData
     }
 
-    return render(request, 'landingPage/index.html', context)
-
-def individualPageView(request) :
-    return render(request, 'landingPage/individual.html')
-
-def resourcesPageView (request) :
-    return render(request, 'landingPage/resources.html')
-
-def databasePageView (request) :
-    return render(request, 'landingPage/database.html')
-
+    return render(request, 'landingPage/database.html', context)
