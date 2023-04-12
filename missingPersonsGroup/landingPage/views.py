@@ -10,7 +10,7 @@ from django.http import HttpResponse
 def indexPageView(request) :
     return render(request, 'landingPage/index.html')
 
-def individualPageView(request) :
+def individualPageView(request, s_name) :
     
     context = {
         "person_name": s_name
