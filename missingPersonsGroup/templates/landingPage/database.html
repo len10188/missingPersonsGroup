@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
     <div class="card text-white bg-secondary my-5 py-6 text-center">
         <div class="card-body">
             <h1>List of Missing Persons </h1>
@@ -23,9 +22,7 @@
                                 <th class="col-md-auto" title="Field #6">State</th>
                                 <th class="col-md-auto" title="Field #7">Gender</th>
                                 <th class="col-md-auto" title="Field #8">Race</th>
-                                <!--
-                                <th class="col-md-auto" title="Link"></th>
-                                -->
+                                <!--<th class="col-md-auto" title="Link"></th>-->
                             </tr>
                         </thead>
                         <tbody>
@@ -39,13 +36,10 @@
                                 <td>{{student.state }}</td>
                                 <td>{{student.gender }}</td>
                                 <td>{{student.race }}</td>
-                                <!--
-                                <td><a href="{% url "individual" s_name=student.last_name %}">View Data</a></td>
-                                -->
+                                <!--<td><a href="{% url "individual" s_name=student.last_name %}">View Data</a></td>-->
                             </tr>
                             {% endfor %}
                         </tbody>
                     </table>
                 </div>
 {% endblock %}
-
