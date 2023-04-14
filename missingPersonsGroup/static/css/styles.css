@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import "otherstyles.css";
+
 /*!
 * Start Bootstrap - Small Business v5.0.6 (https://startbootstrap.com/template/small-business)
 * Copyright 2013-2023 Start Bootstrap
@@ -2799,6 +2801,7 @@ textarea.form-control-lg {
   background-color: var(--bs-btn-bg);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
@@ -2843,7 +2846,7 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #FC4C6D !important;
+  --bs-btn-color: #FC4C6D;
   --bs-btn-bg: #47A7FF;
   --bs-btn-border-color: #47A7FF;
   --bs-btn-hover-color: #fff;
