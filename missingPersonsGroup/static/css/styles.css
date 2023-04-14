@@ -10824,7 +10824,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-  .center-text-title{
-    text-align: center !important;
-  }
+}
+.title-font{
+  font-family: Arial Black !important;
+  color: red !important;
 }
