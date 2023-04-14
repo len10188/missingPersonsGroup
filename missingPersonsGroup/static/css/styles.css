@@ -2788,7 +2788,6 @@ textarea.form-control-lg {
   font-weight: var(--bs-btn-font-weight);
   line-height: var(--bs-btn-line-height);
   color: var(--bs-btn-color);
-  text-align: center !important;
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
@@ -3150,6 +3149,7 @@ textarea.form-control-lg {
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
   --bs-btn-border-radius: 0.25rem;
+  text-align:center !important;
 }
 
 .fade {
