@@ -4,6 +4,7 @@ Purpose: To store JSON data and display it dynamically via HTML.
 '''
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Person
 
 #landing page
 def indexPageView(request) :
@@ -17,6 +18,29 @@ def individualPageView(request) : #s_name
     #}
     
     return render(request, 'landingPage/individual.html') #context
+
+
+#show individuals
+def showIndividualPageView(request) :
+
+    db_person = Person.objects.all() 
+
+    context = {
+            "data" : db_person
+    }
+
+    return render(request, 'landingpage/individual.html', context)   
+
+# display individual data page view
+def displayIndividualPageView(request, id):
+    person = Person.objects.get(id=id)
+
+    context = {
+        "data": person
+    }
+
+    return render(request, 'landingpage/displayIndividual.html',context)
+
 
 # Resources
 def resourcesPageView (request) :

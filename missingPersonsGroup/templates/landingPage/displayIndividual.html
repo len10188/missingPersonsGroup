@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<div class= "flex-container-element" style="display: flex;">
+    <div class="flex-child-element">
+        <div class="col-lg-5">
+            <div style="background: ghostwhite; font-size: 20px; padding:10px; margin:10px; width:100%;">
+                <p><strong>Individual Information:</strong></p>
+                <form>
+                    <label>First Name:</label>
+                    <lable>{{data.first_name}}</lable>
+                    <br>
+                    <label>Last Name:</label>
+                    <lable>{{data.last_name}}</lable>
+                    <br>
+                    <label>Date Missing:</label>
+                    <lable>{{data.date_missing}}</lable>
+                    <br>
+                    <br>
+                    <p><strong>Description:</strong></p>   
+                    <label>Age at Missing:</label>
+                    <lable>{{data.age_at_missing}}</lable>           
+                    <br>
+                    <label>Gender:</label>
+                    <lable>{{data.gender}}</lable>        
+                    <br>
+                    <label>Race:</label>
+                    <lable>{{data.race}}</lable> 
+                    <br>
+                    <br>
+                    <p><strong>Location:</strong></p>
+                    <label>State:</label>
+                    <lable>{{data.state}}</lable>
+                    <br>
+                    <label>City:</label>
+                    <lable>{{data.city}}</lable>
+                </form>  
+            </div>
+        </div>
+    </div>       
+    <div class="flex-child-element">   
+        <div class="card text-white bg-secondary my-5 py-4 text-center"style="width:100%;">
+            <div class="card-body">
+                <p class="text-white m-0" style="font-size:20px">To get help or make a report, contact the National Human Trafficking Hotline: 1-888-373-7999</p>
+                <p class="text-white m-0" style="font-size:20px">For more services, visit <a class="text-white m-0" href="https://humantraffickinghotline.org" target="_blank">humantraffickinghotline.org</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+{% endblock %}

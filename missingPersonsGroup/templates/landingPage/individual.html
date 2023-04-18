@@ -4,25 +4,27 @@
 <div class="container px-4 px-lg-5">
     <!-- Heading Row-->
     <div class="row gx-4 gx-lg-5 align-items-center my-5">
-        <div class="col-lg-7" style="height:400px; width:38%; overflow:auto;">
-            <h1 class="font-weight-light">Search for an Individual</h1>
-            <p>Put name here</p>
-            <a class="btn btn-primary" href="#!">Call to Action!</a>
-        </div>
         <div class="col-lg-5" style="width:62%">
             <h3 style="align-items: center;">Individual Data:</h3>
-            <p>Name:</p>
-            <p>Date Missing:</p>
-            <br>
-            <p><strong>Description:</strong></p>
-            <p>Age at Missing:</p>
-            <p>Gender:</p>
-            <p>Race:</p>
-            <p>Gender:</p>
-            <br>
-            <p><strong>Location:</strong></p>
-            <p>State:</p>
-            <p>City:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th >Last Name</th>
+                        <th >First Name</th> 
+                        <th ></th>              
+                    </tr>     
+                </thead>
+                <tbody>       
+                    {% for person in data %}
+                    <tr>            
+                        <td >{{person.last_name }}</td>
+                        <td >{{person.first_name }}</td>      
+                        <td ><a href="{% url 'displayIndividual' id=person.id %}">Details</a></td>                                         
+                    </tr>
+                    {% endfor %}    
+                </tbody>
+            </table>
+    
         </div>
     </div>
         <div class="card text-white bg-secondary my-5 py-4 text-center">
