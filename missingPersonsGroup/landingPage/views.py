@@ -11,13 +11,13 @@ def indexPageView(request) :
     return render(request, 'landingPage/index.html')
 
 
-def individualPageView(request) : #s_name
+def individualPageView(request) :
     
    # context = {
        # "person_name": s_name
     #}
     
-    return render(request, 'landingPage/individual.html') #context
+    return render(request, 'landingPage/individual.html')
 
 
 #show individuals
