@@ -8,9 +8,6 @@ from .views import indexPageView, displayIndividualPageView, showIndividualPageV
 
 urlpatterns = [
     path('', indexPageView, name = "index"),
-    path('home', indexPageView, name = "index"),
-    #path('individual', individualPageView, name = "individual"),
-    #path('<str:s_name>/', individualPageView, name = "individual"),
     path('<int:id>/', displayIndividualPageView, name="displayIndividual"),
     path('showIndividual/', showIndividualPageView, name = "showIndividual"),
     path('resources', resourcesPageView, name = "resources"),
