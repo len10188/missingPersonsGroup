@@ -22,21 +22,22 @@
                                 <th class="col-md-auto" title="Field #6">State</th>
                                 <th class="col-md-auto" title="Field #7">Gender</th>
                                 <th class="col-md-auto" title="Field #8">Race</th>
+                                <th></th>
                                 <!--<th class="col-md-auto" title="Link"></th>-->
                             </tr>
                         </thead>
                         <tbody>
                             {% for student in data %}
                             <tr>
-                                <td>{{student.date_missing }}</td>
-                                <td>{{student.last_name }}</td>
-                                <td>{{student.first_name }}</td>
-                                <td align="right">{{student.age_at_missing }}</td>
-                                <td>{{student.city }}</td>
-                                <td>{{student.state }}</td>
-                                <td>{{student.gender }}</td>
-                                <td>{{student.race }}</td>
-                                <td></td>
+                                <td>{{student.date_missing}}</td>
+                                <td>{{student.last_name}}</td>
+                                <td>{{student.first_name}}</td>
+                                <td align="right">{{student.age_at_missing}}</td>
+                                <td>{{student.city}}</td>
+                                <td>{{student.state}}</td>
+                                <td>{{student.gender}}</td>
+                                <td>{{student.race}}</td>
+                                <td><a href="{% url 'displayIndividual' id=student.id %}"</td>
                             </tr>
                             {% endfor %}
                         </tbody>
